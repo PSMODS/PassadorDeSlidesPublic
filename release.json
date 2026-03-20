@@ -6,27 +6,27 @@
   "latest_version": "0.1.1",
   "tag_name": "0.1.1",
   "title": "Passador de Slides 0.1.1",
-  "release_url": "/#release",
-  "html_url": "/#release",
+  "release_url": "https://github.com/PSMODS/PassadorDeSlidesPublic/releases/tag/v0.1.1",
+  "html_url": "https://github.com/PSMODS/PassadorDeSlidesPublic/releases/tag/v0.1.1",
   "published_at": "2026-03-20T14:35:00Z",
   "checked_at": "2026-03-20T14:35:00Z",
   "notes": "- Versão pública de teste para validar o alerta de atualização.\n- Instalador disponível pela página pública.\n- Correção do link de release para a página pública.\n- Estrutura pronta para novas publicações sem expor o código-fonte.",
   "assets": [
     {
       "id": 1,
-      "name": "PassadorDeSlides-Setup-v0.1.1-teste.exe",
+      "name": "PassadorDeSlides-Setup-v0.1.1.exe",
       "size": 0,
       "content_type": "application/vnd.microsoft.portable-executable",
       "download_count": 0,
-      "download_url": "/downloads/PassadorDeSlides-Setup-v0.1.1-teste.exe",
-      "api_url": "/downloads/PassadorDeSlides-Setup-v0.1.1-teste.exe",
+      "download_url": "https://github.com/PSMODS/PassadorDeSlidesPublic/releases/download/v0.1.1/PassadorDeSlides-Setup-v0.1.1.exe",
+      "api_url": "https://github.com/PSMODS/PassadorDeSlidesPublic/releases/download/v0.1.1/PassadorDeSlides-Setup-v0.1.1.exe",
       "updated_at": "2026-03-20T14:35:00Z"
     }
   ],
   "primary_asset": {
     "id": 1,
-    "name": "PassadorDeSlides-Setup-v0.1.1-teste.exe",
-    "download_url": "/downloads/PassadorDeSlides-Setup-v0.1.1-teste.exe"
+    "name": "PassadorDeSlides-Setup-v0.1.1.exe",
+    "download_url": "https://github.com/PSMODS/PassadorDeSlidesPublic/releases/download/v0.1.1/PassadorDeSlides-Setup-v0.1.1.exe"
   },
-  "download_url": "/downloads/PassadorDeSlides-Setup-v0.1.1-teste.exe"
+  "download_url": "https://github.com/PSMODS/PassadorDeSlidesPublic/releases/download/v0.1.1/PassadorDeSlides-Setup-v0.1.1.exe"
 }
