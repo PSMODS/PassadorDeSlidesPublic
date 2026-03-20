@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000">
+  <rect width="1600" height="1000" rx="48" fill="#0d1119"/>
+  <rect x="70" y="70" width="680" height="860" rx="32" fill="#1b2230" stroke="#344058"/>
+  <rect x="850" y="70" width="680" height="860" rx="32" fill="#1b2230" stroke="#344058"/>
+  <rect x="110" y="122" width="600" height="68" rx="22" fill="#243041"/>
+  <rect x="110" y="226" width="600" height="90" rx="22" fill="#121a25"/>
+  <rect x="110" y="338" width="600" height="90" rx="22" fill="#121a25"/>
+  <rect x="110" y="450" width="600" height="90" rx="22" fill="#121a25"/>
+  <rect x="110" y="562" width="600" height="90" rx="22" fill="#121a25"/>
+  <rect x="110" y="674" width="600" height="90" rx="22" fill="#121a25"/>
+  <rect x="890" y="122" width="600" height="68" rx="22" fill="#243041"/>
+  <rect x="890" y="238" width="600" height="150" rx="26" fill="#121a25"/>
+  <rect x="890" y="424" width="600" height="226" rx="26" fill="#121a25"/>
+  <rect x="890" y="688" width="600" height="92" rx="22" fill="#ffcf72"/>
+  <text x="800" y="958" text-anchor="middle" fill="#c8bfaf" font-family="Segoe UI, sans-serif" font-size="42" font-weight="700">Substitua por um print de atalhos e configurações</text>
+</svg>

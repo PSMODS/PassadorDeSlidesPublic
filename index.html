@@ -1,0 +1,695 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Passador de Slides | Download Oficial</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0b1018;
+      --panel: rgba(18, 24, 34, 0.88);
+      --panel-strong: rgba(24, 31, 43, 0.96);
+      --panel-soft: rgba(255, 255, 255, 0.04);
+      --line: rgba(255, 255, 255, 0.09);
+      --text: #f7f5ee;
+      --muted: #c9c1b4;
+      --accent: #f0d39b;
+      --accent-strong: #ffcf72;
+      --orange: #ff8a4c;
+      --blue: #4b8cff;
+      --green: #8fd391;
+      --shadow: 0 28px 60px rgba(0, 0, 0, 0.35);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(75, 140, 255, 0.22), transparent 28%),
+        radial-gradient(circle at top right, rgba(255, 138, 76, 0.22), transparent 24%),
+        radial-gradient(circle at bottom, rgba(240, 211, 155, 0.1), transparent 30%),
+        linear-gradient(180deg, #0b1018, #080b11 54%, #090d14);
+      min-height: 100vh;
+    }
+    a { color: inherit; }
+    .page-glow {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background:
+        radial-gradient(circle at 12% 14%, rgba(75, 140, 255, 0.12), transparent 20%),
+        radial-gradient(circle at 86% 10%, rgba(255, 138, 76, 0.12), transparent 20%);
+      opacity: 0.9;
+    }
+    .shell {
+      position: relative;
+      width: min(100%, 1160px);
+      margin: 0 auto;
+      padding: 18px 16px 56px;
+      display: grid;
+      gap: 18px;
+    }
+    .nav,
+    .hero,
+    .section-card,
+    .overlay-card {
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+    }
+    .nav {
+      position: sticky;
+      top: 12px;
+      z-index: 20;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      padding: 14px 18px;
+      border-radius: 22px;
+      background: rgba(10, 14, 22, 0.74);
+    }
+    .brand {
+      display: grid;
+      gap: 4px;
+    }
+    .brand strong {
+      font-size: 19px;
+      letter-spacing: 0.01em;
+    }
+    .brand span {
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: var(--muted);
+      font-weight: 700;
+      font-size: 14px;
+    }
+    .hero {
+      position: relative;
+      overflow: hidden;
+      border-radius: 34px;
+      background:
+        linear-gradient(140deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01)),
+        linear-gradient(135deg, rgba(75, 140, 255, 0.14), transparent 40%),
+        linear-gradient(225deg, rgba(255, 138, 76, 0.14), transparent 46%),
+        rgba(13, 18, 28, 0.94);
+      padding: 34px;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      width: 320px;
+      height: 320px;
+      right: -70px;
+      top: -70px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255, 207, 114, 0.2), transparent 70%);
+    }
+    .hero-grid {
+      position: relative;
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.8fr);
+      gap: 20px;
+      align-items: stretch;
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .eyebrow::before {
+      content: "";
+      width: 28px;
+      height: 1px;
+      background: currentColor;
+    }
+    h1, h2, h3, p { margin: 0; }
+    h1 {
+      margin-top: 14px;
+      font-size: clamp(36px, 5.4vw, 62px);
+      line-height: 0.98;
+      max-width: 700px;
+    }
+    .lead {
+      margin-top: 16px;
+      color: var(--muted);
+      max-width: 700px;
+      font-size: 18px;
+      line-height: 1.58;
+    }
+    .hero-actions,
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 20px;
+    }
+    .button,
+    .button-secondary {
+      appearance: none;
+      border: none;
+      border-radius: 16px;
+      padding: 14px 18px;
+      font-weight: 800;
+      text-decoration: none;
+      cursor: pointer;
+      transition: transform 0.18s ease, opacity 0.18s ease, filter 0.18s ease;
+    }
+    .button:hover,
+    .button-secondary:hover {
+      transform: translateY(-1px);
+      filter: brightness(1.05);
+    }
+    .button {
+      background: linear-gradient(135deg, var(--accent-strong), #fff1cf);
+      color: #11141c;
+    }
+    .button-secondary {
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--text);
+      border: 1px solid var(--line);
+    }
+    .pill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .pill {
+      padding: 10px 12px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+    }
+    .download-card {
+      border-radius: 28px;
+      padding: 22px;
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.03)),
+        rgba(17, 23, 33, 0.95);
+      border: 1px solid var(--line);
+      display: grid;
+      gap: 14px;
+      align-content: start;
+    }
+    .download-card .version {
+      font-size: 30px;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+    }
+    .download-note {
+      color: var(--muted);
+      line-height: 1.5;
+    }
+    .stats-grid,
+    .resource-grid,
+    .gallery-grid {
+      display: grid;
+      gap: 14px;
+    }
+    .stats-grid {
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      margin-top: 10px;
+    }
+    .resource-grid {
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+    .gallery-grid {
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+    .stat-card,
+    .mini-card,
+    .shot-card {
+      border-radius: 24px;
+      padding: 18px;
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.03)),
+        rgba(17, 23, 33, 0.92);
+      border: 1px solid var(--line);
+    }
+    .stat-label {
+      color: var(--muted);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+    .stat-value {
+      font-size: 24px;
+      font-weight: 900;
+      word-break: break-word;
+      letter-spacing: -0.02em;
+    }
+    .section-card {
+      border-radius: 30px;
+      background: rgba(13, 18, 28, 0.9);
+      padding: 26px;
+      display: grid;
+      gap: 18px;
+    }
+    .section-card h2 {
+      font-size: clamp(28px, 4vw, 40px);
+    }
+    .section-card > p {
+      color: var(--muted);
+      max-width: 850px;
+      line-height: 1.58;
+    }
+    .mini-card {
+      display: grid;
+      gap: 10px;
+    }
+    .mini-card h3 {
+      font-size: 20px;
+    }
+    .mini-card p {
+      color: var(--muted);
+      line-height: 1.58;
+    }
+    .shot-card {
+      display: grid;
+      gap: 12px;
+    }
+    .shot-frame {
+      aspect-ratio: 16 / 10;
+      border-radius: 18px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: #111722;
+    }
+    .shot-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .shot-meta {
+      display: grid;
+      gap: 6px;
+    }
+    .shot-meta h3 {
+      font-size: 18px;
+    }
+    .shot-meta p {
+      color: var(--muted);
+      line-height: 1.5;
+    }
+    .notes {
+      white-space: pre-wrap;
+      color: var(--muted);
+      line-height: 1.58;
+      background: rgba(8, 11, 18, 0.76);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 18px;
+      max-height: 320px;
+      overflow: auto;
+    }
+    .overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(5, 7, 10, 0.84);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      z-index: 40;
+    }
+    .overlay.open {
+      display: flex;
+    }
+    .overlay-card {
+      width: min(100%, 520px);
+      background: rgba(16, 21, 31, 0.98);
+      border-radius: 28px;
+      padding: 24px;
+      display: grid;
+      gap: 12px;
+    }
+    .overlay-card p {
+      color: var(--muted);
+      line-height: 1.55;
+    }
+    .count {
+      font-size: 42px;
+      font-weight: 900;
+      color: var(--accent-strong);
+      letter-spacing: -0.04em;
+    }
+    .footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+      padding-top: 8px;
+    }
+    @media (max-width: 900px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+      }
+      .nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-glow"></div>
+  <div class="shell">
+    <nav class="nav">
+      <div class="brand">
+        <strong>Passador de Slides</strong>
+        <span>PowerPoint, PDF, controle web e atualização publicada pela sua página</span>
+      </div>
+      <div class="nav-links">
+        <a href="#beneficios">Benefícios</a>
+        <a href="#recursos">Recursos</a>
+        <a href="#prints">Prints</a>
+        <a href="#downloads">Downloads</a>
+        <a href="#release">Release</a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow">App Windows para PowerPoint e PDF</div>
+          <h1>O controle de apresentações feito para quem precisa de agilidade ao vivo.</h1>
+          <p class="lead">
+            Use um painel limpo, passe slides com rapidez, controle PowerPoint e PDF no mesmo fluxo
+            e tenha um remoto no celular pronto para operação ao vivo. Esta página publica sua versão,
+            entrega o download e ainda alimenta o aviso de atualização dentro do app.
+          </p>
+          <div class="hero-actions">
+            <button class="button" id="heroDownloadButton" type="button">Baixar versão atual</button>
+            <a class="button-secondary" id="heroReleaseButton" href="#release">Ver novidades da versão</a>
+          </div>
+          <div class="pill-list">
+            <span class="pill">PowerPoint + PDF</span>
+            <span class="pill">Controle no celular</span>
+            <span class="pill">Preview ao vivo</span>
+            <span class="pill">QR Code com senha</span>
+            <span class="pill">Atalhos globais</span>
+            <span class="pill">Modo apresentador</span>
+          </div>
+        </div>
+
+        <aside class="download-card">
+          <div class="eyebrow">Download oficial</div>
+          <div class="version" id="versionText">Carregando...</div>
+          <p class="download-note" id="assetText">Lendo automaticamente o arquivo publicado na sua página...</p>
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-label">Arquivo</div>
+              <div class="stat-value" id="assetNameText">-</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-label">Publicação</div>
+              <div class="stat-value" id="publishedText">-</div>
+            </div>
+          </div>
+          <div class="button-row">
+            <button class="button" id="downloadButton" type="button">Iniciar download</button>
+            <a class="button-secondary" id="releaseLink" href="#release">Ler novidades</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section-card" id="beneficios">
+      <div class="eyebrow">Por que usar</div>
+      <h2>Menos atrito na operação. Mais confiança na hora de apresentar.</h2>
+      <p>O Passador de Slides foi pensado para operação real: palco, culto, aula, palestra, congresso e qualquer ambiente em que a apresentação precisa responder rápido sem complicar a vida do operador.</p>
+      <div class="resource-grid">
+        <article class="mini-card">
+          <h3>Comece rápido</h3>
+          <p>Abra o app, vincule o PowerPoint ou o PDF e já controle a apresentação sem depender de uma configuração longa.</p>
+        </article>
+        <article class="mini-card">
+          <h3>Controle com segurança</h3>
+          <p>Tenha botões diretos, atalhos globais e fluxo pensado para reduzir erro durante o uso ao vivo.</p>
+        </article>
+        <article class="mini-card">
+          <h3>Expanda quando quiser</h3>
+          <p>Use modo apresentador, remoto web no celular, múltiplos monitores e outras camadas sem trocar de sistema.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-card" id="recursos">
+      <div class="eyebrow">Recursos</div>
+      <h2>Recursos que ajudam de verdade durante a apresentação.</h2>
+      <p>Em vez de excesso de telas e menus, o foco é dar ao operador um caminho claro para iniciar, navegar, ajustar e encerrar a apresentação com rapidez.</p>
+      <div class="resource-grid">
+        <article class="mini-card">
+          <h3>Operação local simples</h3>
+          <p>Use teclado, passador físico e botões rápidos sem depender de menus complicados no momento mais importante.</p>
+        </article>
+        <article class="mini-card">
+          <h3>Remoto no celular</h3>
+          <p>Abra via QR Code, entre com senha e acompanhe slide atual, próximo slide e comandos principais em tempo real.</p>
+        </article>
+        <article class="mini-card">
+          <h3>PDF e PowerPoint no mesmo app</h3>
+          <p>Controle PowerPoint e PDF no mesmo ambiente, inclusive em modo apresentador e com múltiplos monitores.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-card" id="prints">
+      <div class="eyebrow">Prints do app</div>
+      <h2>Mostre o produto com clareza e valor visual.</h2>
+      <p>Esta galeria já está pronta para receber seus prints reais. Basta substituir os arquivos em <code>cloudflare-pages/assets/screenshots/</code> e a landing continua funcionando sem mexer na estrutura.</p>
+      <div class="gallery-grid">
+        <article class="shot-card">
+          <div class="shot-frame">
+            <img src="./assets/screenshots/tela-principal.svg" alt="Placeholder da tela principal do app">
+          </div>
+          <div class="shot-meta">
+            <h3>Tela principal</h3>
+            <p>Mostre aqui a visão geral do app com controles, status e navegação principal.</p>
+          </div>
+        </article>
+        <article class="shot-card">
+          <div class="shot-frame">
+            <img src="./assets/screenshots/pdf-apresentador.svg" alt="Placeholder do modo PDF apresentador">
+          </div>
+          <div class="shot-meta">
+            <h3>Modo PDF apresentador</h3>
+            <p>Espaço para print do fluxo com monitor de slide e painel do apresentador.</p>
+          </div>
+        </article>
+        <article class="shot-card">
+          <div class="shot-frame">
+            <img src="./assets/screenshots/controle-web.svg" alt="Placeholder do controle web">
+          </div>
+          <div class="shot-meta">
+            <h3>Controle web</h3>
+            <p>Mostre o controle remoto no celular, com preview e comandos principais.</p>
+          </div>
+        </article>
+        <article class="shot-card">
+          <div class="shot-frame">
+            <img src="./assets/screenshots/atalhos-e-modo.svg" alt="Placeholder da área de atalhos e modo">
+          </div>
+          <div class="shot-meta">
+            <h3>Atalhos e modo</h3>
+            <p>Ideal para exibir o mapeamento de teclas, temas e modos do clicker.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-card" id="downloads">
+      <div class="eyebrow">Downloads</div>
+      <h2>Download direto da versão publicada, sem mostrar seu código-fonte.</h2>
+      <p>Os botões desta página usam um arquivo <code>data/update.json</code> publicado no Cloudflare Pages. Assim, você controla a versão disponível ao público a partir da sua própria página de atualização.</p>
+      <div class="resource-grid">
+        <article class="mini-card">
+          <h3>Download pronto para usar</h3>
+          <p>Usa o endpoint <code>/download</code> e redireciona para o arquivo configurado em <code>data/update.json</code>, sem expor seu repositório.</p>
+          <div class="button-row">
+            <button class="button" id="sectionDownloadButton" type="button">Baixar release</button>
+          </div>
+        </article>
+        <article class="mini-card">
+          <h3>Atualização integrada</h3>
+          <p>O mesmo site expõe o <code>/version.json</code> para o app Windows verificar novas versões e avisar o operador quando houver atualização.</p>
+          <div class="button-row">
+            <a class="button-secondary" href="/version.json" target="_blank" rel="noreferrer">Abrir version.json</a>
+            <a class="button-secondary" href="/release.json" target="_blank" rel="noreferrer">Abrir release.json</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-card" id="release">
+      <div class="eyebrow">Release atual</div>
+      <h2 id="releaseTitle">Carregando release...</h2>
+      <p id="repoText">-</p>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-label">Asset principal</div>
+          <div class="stat-value" id="primaryAssetText">-</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Link público</div>
+          <div class="stat-value" id="downloadUrlText">-</div>
+        </div>
+      </div>
+      <div class="notes" id="notesText">Carregando notas da release...</div>
+    </section>
+
+    <section class="section-card">
+      <div class="eyebrow">Pronto para publicar</div>
+      <h2>Uma página só para divulgar, baixar e alimentar o sistema de atualização do app.</h2>
+      <p>Você pode usar esta mesma landing para apresentar o produto, mostrar prints reais, distribuir a versão mais recente e manter o app Windows consultando atualização por <code>version.json</code>, sem deixar seu código-fonte público.</p>
+      <div class="button-row">
+        <button class="button" type="button" id="finalDownloadButton">Baixar agora</button>
+        <a class="button-secondary" href="#prints">Ver área de prints</a>
+      </div>
+    </section>
+
+    <div class="footer">
+      Passador de Slides · Cloudflare Pages + Atualização própria
+    </div>
+  </div>
+
+  <div class="overlay" id="downloadOverlay" aria-hidden="true">
+    <div class="overlay-card">
+      <div class="eyebrow">Preparando download</div>
+      <h2>Seu download será iniciado em instantes</h2>
+      <p>Aguarde alguns segundos enquanto a página prepara o download da versão publicada.</p>
+      <div class="count" id="countdownText">3</div>
+      <div class="button-row">
+        <button class="button-secondary" id="cancelOverlayButton" type="button">Cancelar</button>
+        <a class="button" id="openNowLink" href="/download">Abrir agora</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const versionText = document.getElementById("versionText");
+    const assetText = document.getElementById("assetText");
+    const assetNameText = document.getElementById("assetNameText");
+    const publishedText = document.getElementById("publishedText");
+    const releaseLink = document.getElementById("releaseLink");
+    const heroReleaseButton = document.getElementById("heroReleaseButton");
+    const releaseTitle = document.getElementById("releaseTitle");
+    const repoText = document.getElementById("repoText");
+    const primaryAssetText = document.getElementById("primaryAssetText");
+    const downloadUrlText = document.getElementById("downloadUrlText");
+    const notesText = document.getElementById("notesText");
+    const overlay = document.getElementById("downloadOverlay");
+    const countdownText = document.getElementById("countdownText");
+    const cancelOverlayButton = document.getElementById("cancelOverlayButton");
+    const openNowLink = document.getElementById("openNowLink");
+
+    let countdownTimer = null;
+
+    async function loadRelease() {
+      const response = await fetch(`/release.json?t=${Date.now()}`);
+      const payload = await response.json();
+
+      if (!payload.ok) {
+        versionText.textContent = "Falha";
+        assetText.textContent = payload.error || "Não foi possível carregar a versão publicada.";
+        releaseTitle.textContent = "Falha ao carregar release";
+        notesText.textContent = payload.error || "Sem detalhes.";
+        return;
+      }
+
+      const version = payload.version || payload.latest_version || "-";
+      const assetName = payload.primary_asset?.name || "Nenhum asset encontrado";
+      const published = payload.published_at
+        ? new Date(payload.published_at).toLocaleDateString("pt-BR")
+        : "Sem data";
+      const target = payload.download_url || payload.release_url || "/download";
+
+      versionText.textContent = version;
+      assetText.textContent = payload.primary_asset
+        ? "Arquivo principal resolvido automaticamente a partir da sua publicação."
+        : "Sem arquivo configurado; ajuste o data/update.json.";
+      assetNameText.textContent = assetName;
+      publishedText.textContent = published;
+      releaseTitle.textContent = `Release ${version}`;
+      repoText.textContent = payload.repo || "-";
+      primaryAssetText.textContent = assetName;
+      downloadUrlText.textContent = target;
+      notesText.textContent = payload.notes?.trim() || "Sem notas públicas nesta release.";
+      releaseLink.href = payload.release_url || releaseLink.href;
+      heroReleaseButton.href = payload.release_url || heroReleaseButton.href;
+      openNowLink.href = "/download";
+    }
+
+    function closeOverlay() {
+      overlay.classList.remove("open");
+      overlay.setAttribute("aria-hidden", "true");
+      if (countdownTimer) {
+        clearInterval(countdownTimer);
+        countdownTimer = null;
+      }
+    }
+
+    function startDownloadFlow() {
+      let remaining = 3;
+      countdownText.textContent = String(remaining);
+      overlay.classList.add("open");
+      overlay.setAttribute("aria-hidden", "false");
+      if (countdownTimer) {
+        clearInterval(countdownTimer);
+      }
+      countdownTimer = setInterval(() => {
+        remaining -= 1;
+        if (remaining <= 0) {
+          clearInterval(countdownTimer);
+          countdownTimer = null;
+          window.location.href = "/download";
+          closeOverlay();
+          return;
+        }
+        countdownText.textContent = String(remaining);
+      }, 1000);
+    }
+
+    document.getElementById("downloadButton").addEventListener("click", startDownloadFlow);
+    document.getElementById("heroDownloadButton").addEventListener("click", startDownloadFlow);
+    document.getElementById("sectionDownloadButton").addEventListener("click", startDownloadFlow);
+    document.getElementById("finalDownloadButton").addEventListener("click", startDownloadFlow);
+    cancelOverlayButton.addEventListener("click", closeOverlay);
+    overlay.addEventListener("click", (event) => {
+      if (event.target === overlay) {
+        closeOverlay();
+      }
+    });
+
+    loadRelease().catch((error) => {
+      versionText.textContent = "Falha";
+      assetText.textContent = String(error);
+      releaseTitle.textContent = "Falha ao carregar release";
+      notesText.textContent = String(error);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "version": "0.1.0",
+  "title": "Passador de Slides 0.1.0",
+  "release_url": "/#release",
+  "download_url": "/downloads/PassadorDeSlides-v0.1.0.zip",
+  "asset_name": "PassadorDeSlides-v0.1.0.zip",
+  "content_type": "application/zip",
+  "published_at": "2026-03-20T00:00:00Z",
+  "notes": "- Primeira versão pública do Passador de Slides.\n- Controle PowerPoint e PDF no mesmo app.\n- Controle remoto web com QR Code e senha.\n- Tema claro e escuro.\n- Estrutura pronta para alertas de atualização no app."
+}
