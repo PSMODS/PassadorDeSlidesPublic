@@ -599,6 +599,7 @@
     const openNowLink = document.getElementById("openNowLink");
 
     let countdownTimer = null;
+    let downloadTarget = "#";
 
     async function loadRelease() {
       const response = await fetch(`/release.json?t=${Date.now()}`);
@@ -617,7 +618,7 @@
       const published = payload.published_at
         ? new Date(payload.published_at).toLocaleDateString("pt-BR")
         : "Sem data";
-      const target = payload.download_url || payload.release_url || "/download";
+      const target = payload.download_url || payload.release_url || "#";
 
       versionText.textContent = version;
       assetText.textContent = payload.primary_asset
@@ -632,7 +633,8 @@
       notesText.textContent = payload.notes?.trim() || "Sem notas públicas nesta release.";
       releaseLink.href = payload.release_url || releaseLink.href;
       heroReleaseButton.href = payload.release_url || heroReleaseButton.href;
-      openNowLink.href = "/download";
+      downloadTarget = target;
+      openNowLink.href = downloadTarget;
     }
 
     function closeOverlay() {
@@ -657,7 +659,9 @@
         if (remaining <= 0) {
           clearInterval(countdownTimer);
           countdownTimer = null;
-          window.location.href = "/download";
+          if (downloadTarget && downloadTarget !== "#") {
+            window.location.href = downloadTarget;
+          }
           closeOverlay();
           return;
         }
