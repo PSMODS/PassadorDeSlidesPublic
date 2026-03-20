@@ -10,7 +10,7 @@
   "html_url": "https://github.com/PSMODS/PassadorDeSlidesPublic/releases/tag/v0.1.1",
   "published_at": "2026-03-20T14:35:00Z",
   "checked_at": "2026-03-20T14:35:00Z",
-  "notes": "- Versão pública de teste para validar o alerta de atualização.\n- Instalador disponível pela página pública.\n- Correção do link de release para a página pública.\n- Estrutura pronta para novas publicações sem expor o código-fonte.",
+  "notes": "- Controle de apresentações PowerPoint e PDF no mesmo painel.\n- Controle remoto web pelo celular com acesso por senha.\n- Atalhos globais para avançar, voltar, iniciar e encerrar.\n- Página pública de download mais limpa e mais fácil de usar.\n- Instalador oficial publicado sem expor o código-fonte do projeto.",
   "assets": [
     {
       "id": 1,
