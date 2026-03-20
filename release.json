@@ -1,0 +1,32 @@
+{
+  "ok": true,
+  "source": "cloudflare_pages_static",
+  "repo": "Passador de Slides",
+  "version": "0.1.0",
+  "latest_version": "0.1.0",
+  "tag_name": "0.1.0",
+  "title": "Passador de Slides 0.1.0",
+  "release_url": "/#release",
+  "html_url": "/#release",
+  "published_at": "2026-03-20T00:00:00Z",
+  "checked_at": "2026-03-20T00:00:00Z",
+  "notes": "- Primeira versão pública do Passador de Slides.\n- Controle PowerPoint e PDF no mesmo aplicativo.\n- Controle remoto web com QR Code e senha.\n- Tema claro e escuro.\n- Estrutura pronta para alertas de atualização no app.",
+  "assets": [
+    {
+      "id": 1,
+      "name": "PassadorDeSlides-v0.1.0.zip",
+      "size": 0,
+      "content_type": "application/zip",
+      "download_count": 0,
+      "download_url": "/downloads/PassadorDeSlides-v0.1.0.zip",
+      "api_url": "/downloads/PassadorDeSlides-v0.1.0.zip",
+      "updated_at": "2026-03-20T00:00:00Z"
+    }
+  ],
+  "primary_asset": {
+    "id": 1,
+    "name": "PassadorDeSlides-v0.1.0.zip",
+    "download_url": "/downloads/PassadorDeSlides-v0.1.0.zip"
+  },
+  "download_url": "/downloads/PassadorDeSlides-v0.1.0.zip"
+}
