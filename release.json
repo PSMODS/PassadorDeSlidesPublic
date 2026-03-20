@@ -2,31 +2,31 @@
   "ok": true,
   "source": "cloudflare_pages_static",
   "repo": "Passador de Slides",
-  "version": "0.1.0",
-  "latest_version": "0.1.0",
-  "tag_name": "0.1.0",
-  "title": "Passador de Slides 0.1.0",
+  "version": "0.1.1",
+  "latest_version": "0.1.1",
+  "tag_name": "0.1.1",
+  "title": "Passador de Slides 0.1.1",
   "release_url": "/#release",
   "html_url": "/#release",
-  "published_at": "2026-03-20T00:00:00Z",
-  "checked_at": "2026-03-20T00:00:00Z",
-  "notes": "- Primeira versão pública do Passador de Slides.\n- Controle PowerPoint e PDF no mesmo aplicativo.\n- Controle remoto web com QR Code e senha.\n- Tema claro e escuro.\n- Estrutura pronta para alertas de atualização no app.",
+  "published_at": "2026-03-20T14:35:00Z",
+  "checked_at": "2026-03-20T14:35:00Z",
+  "notes": "- Versão pública de teste para validar o alerta de atualização.\n- Instalador disponível pela página pública.\n- Correção do link de release para a página pública.\n- Estrutura pronta para novas publicações sem expor o código-fonte.",
   "assets": [
     {
       "id": 1,
-      "name": "PassadorDeSlides-v0.1.0.zip",
+      "name": "PassadorDeSlides-Setup-v0.1.1-teste.exe",
       "size": 0,
-      "content_type": "application/zip",
+      "content_type": "application/vnd.microsoft.portable-executable",
       "download_count": 0,
-      "download_url": "/downloads/PassadorDeSlides-v0.1.0.zip",
-      "api_url": "/downloads/PassadorDeSlides-v0.1.0.zip",
-      "updated_at": "2026-03-20T00:00:00Z"
+      "download_url": "/downloads/PassadorDeSlides-Setup-v0.1.1-teste.exe",
+      "api_url": "/downloads/PassadorDeSlides-Setup-v0.1.1-teste.exe",
+      "updated_at": "2026-03-20T14:35:00Z"
     }
   ],
   "primary_asset": {
     "id": 1,
-    "name": "PassadorDeSlides-v0.1.0.zip",
-    "download_url": "/downloads/PassadorDeSlides-v0.1.0.zip"
+    "name": "PassadorDeSlides-Setup-v0.1.1-teste.exe",
+    "download_url": "/downloads/PassadorDeSlides-Setup-v0.1.1-teste.exe"
   },
-  "download_url": "/downloads/PassadorDeSlides-v0.1.0.zip"
+  "download_url": "/downloads/PassadorDeSlides-Setup-v0.1.1-teste.exe"
 }
