@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Passador de Slides | Download Oficial</title>
+  <link rel="icon" href="./assets/app-icon.svg" type="image/svg+xml">
   <style>
     :root {
       color-scheme: dark;
@@ -74,14 +75,28 @@
       background: rgba(10, 14, 22, 0.74);
     }
     .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .brand-copy {
       display: grid;
       gap: 4px;
     }
-    .brand strong {
+    .brand-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 14px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: rgba(255, 255, 255, 0.05);
+      padding: 6px;
+      flex: 0 0 auto;
+    }
+    .brand-copy strong {
       font-size: 19px;
       letter-spacing: 0.01em;
     }
-    .brand span {
+    .brand-copy span {
       color: var(--muted);
       font-size: 13px;
     }
@@ -379,8 +394,11 @@
   <div class="shell">
     <nav class="nav">
       <div class="brand">
-        <strong>Passador de Slides</strong>
-        <span>PowerPoint, PDF, controle web e atualização publicada pela sua página</span>
+        <img class="brand-icon" src="./assets/app-icon.svg" alt="Ícone do Passador de Slides">
+        <div class="brand-copy">
+          <strong>Passador de Slides</strong>
+          <span>PowerPoint, PDF, controle web e atualização publicada pela sua página</span>
+        </div>
       </div>
       <div class="nav-links">
         <a href="#beneficios">Benefícios</a>

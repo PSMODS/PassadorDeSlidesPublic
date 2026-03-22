@@ -47,19 +47,31 @@ Você pode substituir os arquivos `.svg` por capturas reais do app, mantendo os 
 
 ## Como publicar uma nova versão
 
-1. Coloque o arquivo novo em:
+1. Gere a release local no projeto privado:
+
+```powershell
+.\build_release.bat
+```
+
+2. O script `release_public.ps1` copia automaticamente o instalador atual para:
 
 ```text
 cloudflare-pages/downloads/
 ```
 
-2. Edite:
+3. Confira:
 
 ```text
 cloudflare-pages/data/update.json
 ```
 
-3. Atualize os campos:
+4. Se estiver tudo certo, publique esta pasta no Cloudflare Pages ou exporte com:
+
+```powershell
+.\export_public_update_repo.ps1
+```
+
+Campos principais do manifesto:
 
 - `version`
 - `download_url`

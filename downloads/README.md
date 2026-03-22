@@ -1,11 +1,17 @@
 # Downloads
 
-Coloque aqui o arquivo real que será baixado pelo público.
+Esta pasta recebe o instalador real que será baixado pelo público.
 
-Exemplo:
+No fluxo atual, o script abaixo copia automaticamente a release mais nova para cá:
+
+```powershell
+.\release_public.ps1
+```
+
+Arquivo atual esperado:
 
 ```text
-cloudflare-pages/downloads/PassadorDeSlides-v0.1.0.zip
+cloudflare-pages/downloads/PassadorDeSlides-Setup-v0.2.0.exe
 ```
 
 Depois, ajuste o arquivo:

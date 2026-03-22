@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">Passador de Slides</title>
+  <desc id="desc">Icone do aplicativo Passador de Slides</desc>
+  <defs>
+    <linearGradient id="bg" x1="16" y1="12" x2="112" y2="116" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f3d8a0"/>
+      <stop offset="1" stop-color="#d98a4d"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="112" height="112" rx="28" fill="#141922"/>
+  <rect x="12" y="12" width="104" height="104" rx="24" fill="url(#bg)"/>
+  <rect x="30" y="28" width="68" height="72" rx="14" fill="#151922" opacity="0.94"/>
+  <path d="M49 46h18c14 0 22 8 22 19 0 13-10 21-25 21h-9v14H49V46Zm6 5v30h9c11 0 19-5 19-16 0-9-7-14-17-14H55Z" fill="#f8f4ec"/>
+  <circle cx="94" cy="36" r="10" fill="#f8f4ec" opacity="0.22"/>
+</svg>

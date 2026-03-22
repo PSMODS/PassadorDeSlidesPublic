@@ -1,10 +1,10 @@
 {
-  "version": "0.1.2",
-  "title": "Passador de Slides 0.1.2",
-  "release_url": "https://github.com/PSMODS/PassadorDeSlidesPublic/releases/tag/v0.1.2",
-  "download_url": "https://github.com/PSMODS/PassadorDeSlidesPublic/releases/download/v0.1.2/PassadorDeSlides-Setup-v0.1.2.exe",
-  "asset_name": "PassadorDeSlides-Setup-v0.1.2.exe",
+  "version": "0.2.1",
+  "title": "Passador de Slides 0.2.1",
+  "release_url": "https://github.com/PSMODS/PassadorDeSlidesPublic/releases/tag/v0.2.1",
+  "download_url": "https://github.com/PSMODS/PassadorDeSlidesPublic/releases/download/v0.2.1/PassadorDeSlides-Setup-v0.2.1.exe",
+  "asset_name": "PassadorDeSlides-Setup-v0.2.1.exe",
   "content_type": "application/vnd.microsoft.portable-executable",
-  "published_at": "2026-03-21T22:00:00Z",
-  "notes": "- O PDF agora salva e restaura monitores e modo de exibicao.\n- Novo modo tela dupla para espelhar o mesmo slide em 2 monitores.\n- Botao Esc / Fechar para encerrar rapidamente a apresentacao em PDF.\n- Previews do PDF corrigidos para mostrar a pagina inteira sem corte.\n- Janela de novidades da versao integrada ao aplicativo."
+  "published_at": "2026-03-22T18:20:00Z",
+  "notes": "- Corrigido o erro de abertura do app em máquinas com configuração antiga de atalhos.\n- A migração dos atalhos agora aceita formatos legados e dados serializados como texto JSON.\n- Mantidas as melhorias recentes, como modos global e normal, Fechar PDF, PIX no desktop e no web e o controle web com ícone do app."
 }
