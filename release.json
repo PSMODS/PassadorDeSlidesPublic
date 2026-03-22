@@ -1,4 +1,4 @@
-{
+﻿{
   "ok": true,
   "source": "cloudflare_pages_static",
   "repo": "Passador de Slides",
@@ -6,8 +6,8 @@
   "latest_version": "0.2.2",
   "tag_name": "0.2.2",
   "title": "Passador de Slides 0.2.2",
-  "release_url": "https://github.com/PSMODS/PassadorDeSlidesPublic/releases",
-  "html_url": "https://github.com/PSMODS/PassadorDeSlidesPublic/releases",
+  "release_url": "https://github.com/PSMODS/PassadorDeSlidesPublic/releases/tag/v0.2.2",
+  "html_url": "https://github.com/PSMODS/PassadorDeSlidesPublic/releases/tag/v0.2.2",
   "published_at": "2026-03-22T21:30:00Z",
   "checked_at": "2026-03-22T21:30:00Z",
   "notes": "- A janela de novidades agora abre na frente do app, centralizada e realmente visível.\n- O botão Esc / Fechar do PDF foi removido da interface para evitar confusão com atalho global.\n- O executável e o instalador agora usam o ícone personalizado do aplicativo.\n- Barra de tarefas, atalhos e bandeja foram ajustados para respeitar melhor o ícone do app no Windows.\n- Nova publicação preparada para reativar o aviso de atualização nas versões anteriores instaladas.",
@@ -18,15 +18,15 @@
       "size": 0,
       "content_type": "application/vnd.microsoft.portable-executable",
       "download_count": 0,
-      "download_url": "/downloads/PassadorDeSlides-Setup-v0.2.2.exe",
-      "api_url": "/downloads/PassadorDeSlides-Setup-v0.2.2.exe",
+      "download_url": "https://github.com/PSMODS/PassadorDeSlidesPublic/releases/download/v0.2.2/PassadorDeSlides-Setup-v0.2.2.exe",
+      "api_url": "https://github.com/PSMODS/PassadorDeSlidesPublic/releases/download/v0.2.2/PassadorDeSlides-Setup-v0.2.2.exe",
       "updated_at": "2026-03-22T21:30:00Z"
     }
   ],
   "primary_asset": {
     "id": 1,
     "name": "PassadorDeSlides-Setup-v0.2.2.exe",
-    "download_url": "/downloads/PassadorDeSlides-Setup-v0.2.2.exe"
+    "download_url": "https://github.com/PSMODS/PassadorDeSlidesPublic/releases/download/v0.2.2/PassadorDeSlides-Setup-v0.2.2.exe"
   },
-  "download_url": "/downloads/PassadorDeSlides-Setup-v0.2.2.exe"
+  "download_url": "https://github.com/PSMODS/PassadorDeSlidesPublic/releases/download/v0.2.2/PassadorDeSlides-Setup-v0.2.2.exe"
 }
