@@ -2,31 +2,31 @@
   "ok": true,
   "source": "cloudflare_pages_static",
   "repo": "Passador de Slides",
-  "version": "0.1.1",
-  "latest_version": "0.1.1",
-  "tag_name": "0.1.1",
-  "title": "Passador de Slides 0.1.1",
-  "release_url": "https://github.com/PSMODS/PassadorDeSlidesPublic/releases/tag/v0.1.1",
-  "html_url": "https://github.com/PSMODS/PassadorDeSlidesPublic/releases/tag/v0.1.1",
-  "published_at": "2026-03-20T14:35:00Z",
-  "checked_at": "2026-03-20T14:35:00Z",
-  "notes": "- Controle de apresentações PowerPoint e PDF no mesmo painel.\n- Controle remoto web pelo celular com acesso por senha.\n- Atalhos globais para avançar, voltar, iniciar e encerrar.\n- Página pública de download mais limpa e mais fácil de usar.\n- Instalador oficial publicado sem expor o código-fonte do projeto.",
+  "version": "0.1.2",
+  "latest_version": "0.1.2",
+  "tag_name": "0.1.2",
+  "title": "Passador de Slides 0.1.2",
+  "release_url": "https://github.com/PSMODS/PassadorDeSlidesPublic/releases/tag/v0.1.2",
+  "html_url": "https://github.com/PSMODS/PassadorDeSlidesPublic/releases/tag/v0.1.2",
+  "published_at": "2026-03-21T22:00:00Z",
+  "checked_at": "2026-03-21T22:00:00Z",
+  "notes": "- O PDF agora salva e restaura monitores e modo de exibicao.\n- Novo modo tela dupla para espelhar o mesmo slide em 2 monitores.\n- Botao Esc / Fechar para encerrar rapidamente a apresentacao em PDF.\n- Previews do PDF corrigidos para mostrar a pagina inteira sem corte.\n- Janela de novidades da versao integrada ao aplicativo.",
   "assets": [
     {
       "id": 1,
-      "name": "PassadorDeSlides-Setup-v0.1.1.exe",
+      "name": "PassadorDeSlides-Setup-v0.1.2.exe",
       "size": 0,
       "content_type": "application/vnd.microsoft.portable-executable",
       "download_count": 0,
-      "download_url": "https://github.com/PSMODS/PassadorDeSlidesPublic/releases/download/v0.1.1/PassadorDeSlides-Setup-v0.1.1.exe",
-      "api_url": "https://github.com/PSMODS/PassadorDeSlidesPublic/releases/download/v0.1.1/PassadorDeSlides-Setup-v0.1.1.exe",
-      "updated_at": "2026-03-20T14:35:00Z"
+      "download_url": "https://github.com/PSMODS/PassadorDeSlidesPublic/releases/download/v0.1.2/PassadorDeSlides-Setup-v0.1.2.exe",
+      "api_url": "https://github.com/PSMODS/PassadorDeSlidesPublic/releases/download/v0.1.2/PassadorDeSlides-Setup-v0.1.2.exe",
+      "updated_at": "2026-03-21T22:00:00Z"
     }
   ],
   "primary_asset": {
     "id": 1,
-    "name": "PassadorDeSlides-Setup-v0.1.1.exe",
-    "download_url": "https://github.com/PSMODS/PassadorDeSlidesPublic/releases/download/v0.1.1/PassadorDeSlides-Setup-v0.1.1.exe"
+    "name": "PassadorDeSlides-Setup-v0.1.2.exe",
+    "download_url": "https://github.com/PSMODS/PassadorDeSlidesPublic/releases/download/v0.1.2/PassadorDeSlides-Setup-v0.1.2.exe"
   },
-  "download_url": "https://github.com/PSMODS/PassadorDeSlidesPublic/releases/download/v0.1.1/PassadorDeSlides-Setup-v0.1.1.exe"
+  "download_url": "https://github.com/PSMODS/PassadorDeSlidesPublic/releases/download/v0.1.2/PassadorDeSlides-Setup-v0.1.2.exe"
 }
