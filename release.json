@@ -2,31 +2,31 @@
   "ok": true,
   "source": "cloudflare_pages_static",
   "repo": "Passador de Slides",
-  "version": "0.2.1",
-  "latest_version": "0.2.1",
-  "tag_name": "0.2.1",
-  "title": "Passador de Slides 0.2.1",
+  "version": "0.2.2",
+  "latest_version": "0.2.2",
+  "tag_name": "0.2.2",
+  "title": "Passador de Slides 0.2.2",
   "release_url": "https://github.com/PSMODS/PassadorDeSlidesPublic/releases",
   "html_url": "https://github.com/PSMODS/PassadorDeSlidesPublic/releases",
-  "published_at": "2026-03-22T18:20:00Z",
-  "checked_at": "2026-03-22T18:20:00Z",
-  "notes": "- Corrigido o erro de abertura do app em máquinas com configuração antiga de atalhos.\n- A migração dos atalhos agora aceita formatos legados e dados serializados como texto JSON.\n- Mantidas as melhorias recentes, como modos global e normal, Fechar PDF, PIX no desktop e no web e o controle web com ícone do app.",
+  "published_at": "2026-03-22T21:30:00Z",
+  "checked_at": "2026-03-22T21:30:00Z",
+  "notes": "- A janela de novidades agora abre na frente do app, centralizada e realmente visível.\n- O botão Esc / Fechar do PDF foi removido da interface para evitar confusão com atalho global.\n- O executável e o instalador agora usam o ícone personalizado do aplicativo.\n- Barra de tarefas, atalhos e bandeja foram ajustados para respeitar melhor o ícone do app no Windows.\n- Nova publicação preparada para reativar o aviso de atualização nas versões anteriores instaladas.",
   "assets": [
     {
       "id": 1,
-      "name": "PassadorDeSlides-Setup-v0.2.1.exe",
+      "name": "PassadorDeSlides-Setup-v0.2.2.exe",
       "size": 0,
       "content_type": "application/vnd.microsoft.portable-executable",
       "download_count": 0,
-      "download_url": "/downloads/PassadorDeSlides-Setup-v0.2.1.exe",
-      "api_url": "/downloads/PassadorDeSlides-Setup-v0.2.1.exe",
-      "updated_at": "2026-03-22T18:20:00Z"
+      "download_url": "/downloads/PassadorDeSlides-Setup-v0.2.2.exe",
+      "api_url": "/downloads/PassadorDeSlides-Setup-v0.2.2.exe",
+      "updated_at": "2026-03-22T21:30:00Z"
     }
   ],
   "primary_asset": {
     "id": 1,
-    "name": "PassadorDeSlides-Setup-v0.2.1.exe",
-    "download_url": "/downloads/PassadorDeSlides-Setup-v0.2.1.exe"
+    "name": "PassadorDeSlides-Setup-v0.2.2.exe",
+    "download_url": "/downloads/PassadorDeSlides-Setup-v0.2.2.exe"
   },
-  "download_url": "/downloads/PassadorDeSlides-Setup-v0.2.1.exe"
+  "download_url": "/downloads/PassadorDeSlides-Setup-v0.2.2.exe"
 }
