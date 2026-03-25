@@ -2,31 +2,31 @@
   "ok": true,
   "source": "cloudflare_pages_static",
   "repo": "Passador de Slides",
-  "version": "0.2.3",
-  "latest_version": "0.2.3",
-  "tag_name": "0.2.3",
-  "title": "Passador de Slides 0.2.3",
-  "release_url": "https://github.com/PSMODS/PassadorDeSlidesPublic/releases/tag/v0.2.3",
-  "html_url": "https://github.com/PSMODS/PassadorDeSlidesPublic/releases/tag/v0.2.3",
-  "published_at": "2026-03-22T22:30:00Z",
-  "checked_at": "2026-03-22T22:30:00Z",
-  "notes": "- Versão interna do aplicativo alinhada corretamente com o instalador publicado.\n- Fluxo de atualização revisado para evitar divergência entre versão mostrada e versão instalada.\n- Mantidas as correções recentes da janela de novidades, ícone do app e leitura de manifestos.\n- Release pública preparada para sinalizar a nova versão de forma correta nas instalações anteriores.",
+  "version": "0.2.4",
+  "latest_version": "0.2.4",
+  "tag_name": "0.2.4",
+  "title": "Passador de Slides 0.2.4",
+  "release_url": "https://github.com/PSMODS/PassadorDeSlidesPublic/releases/tag/v0.2.4",
+  "html_url": "https://github.com/PSMODS/PassadorDeSlidesPublic/releases/tag/v0.2.4",
+  "published_at": "2026-03-24T22:00:00Z",
+  "checked_at": "2026-03-24T22:00:00Z",
+  "notes": "- Instalador ajustado para fechar e substituir corretamente versões anteriores do aplicativo.\n- Versão interna do app alinhada novamente com a versão do instalador publicado.\n- Mantidas as correções recentes da janela de novidades, ícone do app e leitura de manifestos.\n- Nova publicação preparada para destravar o fluxo de atualização sem divergência de versão após instalar.",
   "assets": [
     {
       "id": 1,
-      "name": "PassadorDeSlides-Setup-v0.2.3.exe",
+      "name": "PassadorDeSlides-Setup-v0.2.4.exe",
       "size": 0,
       "content_type": "application/vnd.microsoft.portable-executable",
       "download_count": 0,
-      "download_url": "https://github.com/PSMODS/PassadorDeSlidesPublic/releases/download/v0.2.3/PassadorDeSlides-Setup-v0.2.3.exe",
-      "api_url": "https://github.com/PSMODS/PassadorDeSlidesPublic/releases/download/v0.2.3/PassadorDeSlides-Setup-v0.2.3.exe",
-      "updated_at": "2026-03-22T22:30:00Z"
+      "download_url": "https://github.com/PSMODS/PassadorDeSlidesPublic/releases/download/v0.2.4/PassadorDeSlides-Setup-v0.2.4.exe",
+      "api_url": "https://github.com/PSMODS/PassadorDeSlidesPublic/releases/download/v0.2.4/PassadorDeSlides-Setup-v0.2.4.exe",
+      "updated_at": "2026-03-24T22:00:00Z"
     }
   ],
   "primary_asset": {
     "id": 1,
-    "name": "PassadorDeSlides-Setup-v0.2.3.exe",
-    "download_url": "https://github.com/PSMODS/PassadorDeSlidesPublic/releases/download/v0.2.3/PassadorDeSlides-Setup-v0.2.3.exe"
+    "name": "PassadorDeSlides-Setup-v0.2.4.exe",
+    "download_url": "https://github.com/PSMODS/PassadorDeSlidesPublic/releases/download/v0.2.4/PassadorDeSlides-Setup-v0.2.4.exe"
   },
-  "download_url": "https://github.com/PSMODS/PassadorDeSlidesPublic/releases/download/v0.2.3/PassadorDeSlides-Setup-v0.2.3.exe"
+  "download_url": "https://github.com/PSMODS/PassadorDeSlidesPublic/releases/download/v0.2.4/PassadorDeSlides-Setup-v0.2.4.exe"
 }
