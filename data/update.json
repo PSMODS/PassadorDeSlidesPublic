@@ -1,10 +1,10 @@
 {
-  "version": "0.2.4",
-  "title": "Passador de Slides 0.2.4",
-  "release_url": "https://github.com/PSMODS/PassadorDeSlidesPublic/releases/tag/v0.2.4",
-  "download_url": "https://github.com/PSMODS/PassadorDeSlidesPublic/releases/download/v0.2.4/PassadorDeSlides-Setup-v0.2.4.exe",
-  "asset_name": "PassadorDeSlides-Setup-v0.2.4.exe",
+  "version": "0.2.5",
+  "title": "Passador de Slides 0.2.5",
+  "release_url": "https://github.com/PSMODS/PassadorDeSlidesPublic/releases/tag/v0.2.5",
+  "download_url": "https://github.com/PSMODS/PassadorDeSlidesPublic/releases/download/v0.2.5/PassadorDeSlides-Setup-v0.2.5.exe",
+  "asset_name": "PassadorDeSlides-Setup-v0.2.5.exe",
   "content_type": "application/vnd.microsoft.portable-executable",
-  "published_at": "2026-03-24T22:00:00Z",
-  "notes": "- Instalador ajustado para fechar e substituir corretamente versões anteriores do aplicativo.\n- Versão interna do app alinhada novamente com a versão do instalador publicado.\n- Mantidas as correções recentes da janela de novidades, ícone do app e leitura de manifestos.\n- Nova publicação preparada para destravar o fluxo de atualização sem divergência de versão após instalar."
+  "published_at": "2026-03-30T22:00:00Z",
+  "notes": "- Novo botão para resetar o aplicativo e limpar dados locais, logs e cache temporário.\n- Controle remoto reforçado com bloqueio temporário após muitas tentativas inválidas.\n- Textos da interface e das notas de versão revisados para reduzir problemas de encoding.\n- Scripts de build atualizados para usar o ambiente virtual e localizar o Inno Setup automaticamente."
 }
