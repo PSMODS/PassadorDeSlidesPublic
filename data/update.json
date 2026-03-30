@@ -1,8 +1,8 @@
 {
   "version": "0.2.5",
   "title": "Passador de Slides 0.2.5",
-  "release_url": "https://github.com/PSMODS/PassadorDeSlidesPublic/releases/tag/v0.2.5",
-  "download_url": "https://github.com/PSMODS/PassadorDeSlidesPublic/releases/download/v0.2.5/PassadorDeSlides-Setup-v0.2.5.exe",
+  "release_url": "https://github.com/PSMODS/PassadorDeSlidesPublic/blob/main/release.json",
+  "download_url": "https://raw.githubusercontent.com/PSMODS/PassadorDeSlidesPublic/main/downloads/PassadorDeSlides-Setup-v0.2.5.exe",
   "asset_name": "PassadorDeSlides-Setup-v0.2.5.exe",
   "content_type": "application/vnd.microsoft.portable-executable",
   "published_at": "2026-03-30T22:00:00Z",
