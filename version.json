@@ -6,8 +6,8 @@
   "latest_version": "0.2.6",
   "tag_name": "0.2.6",
   "title": "Passador de Slides 0.2.6",
-  "release_url": "https://passador-de-slides-public.psxdpro.workers.dev/",
-  "html_url": "https://passador-de-slides-public.psxdpro.workers.dev/",
+  "release_url": "https://github.com/PSMODS/PassadorDeSlidesPublic/releases/tag/v0.2.6",
+  "html_url": "https://github.com/PSMODS/PassadorDeSlidesPublic/releases/tag/v0.2.6",
   "published_at": "2026-03-31T01:00:00Z",
   "checked_at": "2026-03-31T01:00:00Z",
   "notes": "- Correcao critica no controle remoto web para evitar erro 500 em outras maquinas.\n- Build do instalador ajustada para incluir os arquivos da interface web no pacote final.\n- Fallback interno adicionado no servidor web para manter a tela do controle funcionando mesmo sem templates externos.\n- Mantidas as melhorias recentes de reset do app, seguranca do controle remoto e processo de release.",
@@ -18,15 +18,15 @@
       "size": 61940481,
       "content_type": "application/vnd.microsoft.portable-executable",
       "download_count": 0,
-      "download_url": "https://raw.githubusercontent.com/PSMODS/PassadorDeSlidesPublic/main/downloads/PassadorDeSlides-Setup-v0.2.6.exe",
-      "api_url": "https://raw.githubusercontent.com/PSMODS/PassadorDeSlidesPublic/main/downloads/PassadorDeSlides-Setup-v0.2.6.exe",
+      "download_url": "https://github.com/PSMODS/PassadorDeSlidesPublic/releases/download/v0.2.6/PassadorDeSlides-Setup-v0.2.6.exe",
+      "api_url": "https://github.com/PSMODS/PassadorDeSlidesPublic/releases/download/v0.2.6/PassadorDeSlides-Setup-v0.2.6.exe",
       "updated_at": "2026-03-31T01:00:00Z"
     }
   ],
   "primary_asset": {
     "id": 1,
     "name": "PassadorDeSlides-Setup-v0.2.6.exe",
-    "download_url": "https://raw.githubusercontent.com/PSMODS/PassadorDeSlidesPublic/main/downloads/PassadorDeSlides-Setup-v0.2.6.exe"
+    "download_url": "https://github.com/PSMODS/PassadorDeSlidesPublic/releases/download/v0.2.6/PassadorDeSlides-Setup-v0.2.6.exe"
   },
-  "download_url": "https://raw.githubusercontent.com/PSMODS/PassadorDeSlidesPublic/main/downloads/PassadorDeSlides-Setup-v0.2.6.exe"
+  "download_url": "https://github.com/PSMODS/PassadorDeSlidesPublic/releases/download/v0.2.6/PassadorDeSlides-Setup-v0.2.6.exe"
 }
